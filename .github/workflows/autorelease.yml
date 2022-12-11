@@ -87,7 +87,7 @@ jobs:
         nuget.exe restore Stracciatella.sln
         msbuild.exe Stracciatella.sln /p:Configuration=Release /p:Platform="Any CPU"
         tree /F
-        Copy-Item -Path Stracciatella\Release\Stracciatella.exe -Destination compiled\Stracciatella.exe
+        Copy-Item -Path Stracciatella.exe -Destination compiled\\Stracciatella.exe
     - name: Build Package
       # Powershell is utter fucking trash. I AGREEEEEEEEEEEE!!!
       run: |
