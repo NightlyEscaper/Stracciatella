@@ -73,8 +73,6 @@ jobs:
 
     - name: Check out code
       uses: actions/checkout@v2
-      with:
-        submodules: recursive
 
     - name: Git Fetch Tags
       run: git fetch --prune --unshallow --tags -f
